@@ -1,0 +1,20 @@
+{
+    "name": "com.mgs.jsonavatar",
+    "version": "1.0.0",
+    "displayName": "Json Avatar",
+    "description": "Avatar for json file.",
+    "unity": "2021.3",
+    "dependencies": {
+        "com.unity.nuget.newtonsoft-json": "3.2.2"
+    },
+    "keywords": [
+        "json",
+        "convert",
+        "avatar"
+    ],
+    "author": {
+        "name": "Mogoson",
+        "email": "mogoson@outlook.com",
+        "url": "https://github.com/mogoson"
+    }
+}
