@@ -33,6 +33,12 @@ namespace MGS.JsonAvatar
             }
         }
 
+        public static string ToJson(object obj, bool fieldOnly, out Exception error)
+        {
+            var contractResolver = fieldOnly ? new FieldOnlyContractResolver() : new DefaultContractResolver();
+            return ToJson(obj, contractResolver, out error);
+        }
+
         public static string ToJson(object obj, IContractResolver contractResolver, out Exception error)
         {
             var settings = new JsonSerializerSettings { ContractResolver = contractResolver };
