@@ -23,6 +23,7 @@ namespace MGS.JsonAvatar
                 if (!pulled)
                 {
                     Pull(out _);
+                    pulled = true;
                 }
                 return data;
             }
@@ -46,12 +47,12 @@ namespace MGS.JsonAvatar
         public virtual T Pull(out Exception error)
         {
             data = JsonFile.Read<T>(filePath, out error);
-            return Data;
+            return data;
         }
 
         public virtual Exception Push()
         {
-            return JsonFile.Write(filePath, Data);
+            return JsonFile.Write(filePath, data);
         }
     }
 }
