@@ -17,7 +17,7 @@ using NtJsonConvert = Newtonsoft.Json.JsonConvert;
 
 namespace MGS.JsonAvatar
 {
-    public sealed class JsonConvert
+    public static class JsonConvert
     {
         public static string ToJson(object obj, out Exception error)
         {
