@@ -16,7 +16,7 @@ namespace MGS.JsonAvatar
 {
     public interface IJsonAvatar<T>
     {
-        T Data { get; }
+        T Data { set; get; }
 
         T Pull(out Exception error);
 

@@ -18,6 +18,7 @@ namespace MGS.JsonAvatar
     {
         public T Data
         {
+            set { data = value; }
             get
             {
                 if (!pulled)
